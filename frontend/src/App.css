@@ -1,0 +1,60 @@
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-image: linear-gradient(to right, #1a373c, #8f6305); /* Gradient background */
+  height: 7vh; /* Fixed height */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+.mybook {
+  font-size: 18px;
+  margin: 0;
+  color: white; /* Bright text color */
+}
+
+.tagline {
+  display: none; /* Hide tagline for compactness */
+}
+
+.cart-num {
+  display: flex;
+  align-items: center;
+}
+
+.cart-items {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  font-size: 18px;
+  margin-right: 1rem;
+}
+
+.cart-items:hover {
+  background-color: #3e8e41;
+}
+
+/* Cart Icon Link */
+.cart-num a {
+  color: white;
+}
+
+.cart-num a:hover {
+  color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cart-num {
+    margin-top: 1rem;
+  }
+}

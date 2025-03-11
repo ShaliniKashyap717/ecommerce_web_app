@@ -1,0 +1,55 @@
+.header {
+    display: flex;
+    justify-content: space-between; /* Ensures items are at the edges */
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-image: linear-gradient(to right, #1a373c, #8f6305);
+    height: 7vh;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .mybook {
+    font-size: 18px;
+    margin: 0;
+    color: white;
+  }
+  
+  .cart-num {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Pushes it to the rightmost side */
+  }
+  
+  .cart-items {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    font-size: 18px;
+    margin-right: 1rem;
+  }
+  
+  .cart-items:hover {
+    background-color: #3e8e41;
+  }
+  
+  .cart-num a {
+    color: white;
+  }
+  
+  .cart-num a:hover {
+    color: #ccc;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: row; /* Ensures horizontal alignment */
+      align-items: center;
+    }
+    .cart-num {
+      margin-top: 0;
+    }
+  }
+  
